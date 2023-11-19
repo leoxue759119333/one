@@ -17,7 +17,6 @@ threadid=''
 print('0')
 print(threadid)
 client = OpenAI(
-	api_key="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"    #赖总
-	#api_key="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"  #我的
+	api_key="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"
 )
 assistant = client.beta.assistants.retrieve('asst_0Mhoh0sJHpRIIrx6bHQZPHWh')
