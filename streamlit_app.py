@@ -16,12 +16,8 @@ if 'threadid' not in st.session_state:
 threadid=''
 print('0')
 print(threadid)
-client = OpenAI(api_key='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')
-print(client)
-completion = client.chat.completions.create(
-  model="gpt-3.5-turbo",
-  messages=[
-    {"role": "system", "content": "You are a poetic assistant, skilled in explaining complex programming concepts with creative flair."},
-    {"role": "user", "content": "Compose a poem that explains the concept of recursion in programming."}
-  ]
+client = OpenAI(
+   api_key="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",
 )
+
+assistant = client.beta.assistants.retrieve("asst_0Mhoh0sJHpRIIrx6bHQZPHWh")
