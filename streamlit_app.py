@@ -19,4 +19,4 @@ print(threadid)
 client = OpenAI(
 	api_key="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"
 )
-assistant = client.beta.assistants.retrieve('asst_0Mhoh0sJHpRIIrx6bHQZPHWh')
+print(client)
