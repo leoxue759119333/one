@@ -16,7 +16,5 @@ if 'threadid' not in st.session_state:
 threadid=''
 print('0')
 print(threadid)
-client = OpenAI(
-	api_key="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"
-)
+client = OpenAI()
 print(client)
