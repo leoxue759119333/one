@@ -20,3 +20,4 @@ client = OpenAI(
 	api_key="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"    #赖总
 	#api_key="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"  #我的
 )
+assistant = client.beta.assistants.retrieve(jingshenkangfu_id)
